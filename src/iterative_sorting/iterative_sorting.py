@@ -22,20 +22,12 @@ def selection_sort(arr):
 
 
 def bubble_sort(arr):
-    # pass_count = 0
-    # while pass_count < 35:
-    #     for i in range(0, len(arr) - 1):
-    #         cur_index = i
-    #         next_index = i + 1
-    #         if arr[cur_index] > arr[next_index]:
-    #             arr[cur_index], arr[next_index] = arr[next_index], arr[cur_index]
-    #         else:
-    #             pass_count += 1
-    #             print(pass_count)
     for i in range(0, len(arr) - 1):
         for j in range(0, len(arr) - 1 - i):
-            if arr[j] > arr[j + 1]:
-                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+            cur_index = j
+            next_index = j + 1
+            if arr[cur_index] > arr[next_index]:
+                arr[cur_index], arr[next_index] = arr[next_index], arr[cur_index]
 
     return arr
 
