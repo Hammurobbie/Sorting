@@ -32,11 +32,6 @@ def bubble_sort(arr):
     return arr
 
 
-test_arr = [5, 8, 1, 2, 6, 9, 0, 10, 3]
-bubble_sort(test_arr)
-print(test_arr)
-
-
 # STRETCH: implement the Count Sort function below
 def count_sort(arr, maximum=-1):
 
